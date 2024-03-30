@@ -1,0 +1,13 @@
+{
+	"Name": "QuirkQuipment",
+	"Enabled": true,
+	"Description": "Quirk equimpent for bad mechs",
+	"Author": "klyith",
+
+	"Version": "1a",
+
+	"Manifest": [
+		{ "Type": "UpgradeDef", "Path": "quipment", "AddToDB": true },
+		{ "Type": "ChassisDef", "Path": "chassisMerge", "ShouldMergeJSON": true },
+	]
+}

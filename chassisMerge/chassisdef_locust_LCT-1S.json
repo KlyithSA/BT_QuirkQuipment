@@ -1,0 +1,21 @@
+{
+    "Description": {
+        "Details": "Locust 1S models tend to sacrifice the little armor they normally mount to fire respectable SRM salvos. Definitely useful for hit-and-runs, especially if those shots provide the extra punch to knock down a target.\r\nLocusts excell at low profile movement, making them harder to spot.",
+    },
+    "SensorRangeMultiplier": 1.1,
+    "Signature": -0.1,
+    "FixedEquipment" : [
+        {
+            "MountedLocation" : "CenterTorso",
+            "ComponentDefID" : "Gear_LCT_Chassis",
+            "SimGameUID" : "",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "GUID" : null,
+            "DamageLevel" : "Functional",
+            "prefabName" : null,
+            "hasPrefabName" : false
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "FixedEquipment" : [
+        {
+            "MountedLocation" : "Head",
+            "ComponentDefID" : "Gear_BLR_CommandCon",
+            "SimGameUID" : "",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "GUID" : null,
+            "DamageLevel" : "Functional",
+            "prefabName" : null,
+            "hasPrefabName" : false
+        }
+    ]
+}

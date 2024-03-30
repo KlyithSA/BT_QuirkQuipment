@@ -1,0 +1,21 @@
+{
+    "Description": {
+        "Details": "The basic Locust 1V has one big advantage: speed. It's not meant to put up much of a fight, but you'd be hard-pressed to find a 'Mech that goes further and is harder to hit.\r\nLocusts excell at low profile movement, making them harder to spot.",
+    },
+    "SensorRangeMultiplier": 1.1,
+    "Signature": -0.1,
+    "FixedEquipment" : [
+        {
+            "MountedLocation" : "CenterTorso",
+            "ComponentDefID" : "Gear_LCT_Chassis",
+            "SimGameUID" : "",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "GUID" : null,
+            "DamageLevel" : "Functional",
+            "prefabName" : null,
+            "hasPrefabName" : false
+        }
+    ]
+}

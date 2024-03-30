@@ -1,0 +1,21 @@
+{
+    "Description": {
+        "Details": "The Locust's 1M model is interesting in that it can churn out a decent volley of LRMs for such a small 'Mech. It's a great harasser, especially if you can use its speed to lob missiles into the weaker rear armor of targets. But it normally has almost no armor itself.\r\nLocusts excell at low profile movement, making them harder to spot.",
+    },
+    "SensorRangeMultiplier": 1.1,
+    "Signature": -0.1,
+    "FixedEquipment" : [
+        {
+            "MountedLocation" : "CenterTorso",
+            "ComponentDefID" : "Gear_LCT_Chassis",
+            "SimGameUID" : "",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "GUID" : null,
+            "DamageLevel" : "Functional",
+            "prefabName" : null,
+            "hasPrefabName" : false
+        }
+    ]
+}

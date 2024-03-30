@@ -1,0 +1,105 @@
+{
+    "Description" : {
+        "Cost" : 0,
+        "Rarity" : 99,
+        "Purchasable" : false,
+        "Manufacturer" : "Technicron",
+        "Model" : "",
+        "UIName" : "Rapid Actuators",
+        "Id" : "Gear_QKD_Actuators",
+        "Name" : "Quickdraw Rapid Actuators",
+        "Details" : "Technicron's unusually flexible actuator joints give the Quickdraw superior agility for a 'mech of its class. When moving at high speed it maintains the balance to put weapons on target, with only moderate loss of accuracy. Unfortunately they are also the main weakness, as the large rotors are fragile and often targeted by opponents.",
+        "Icon" : "UixSvgIcon_specialEquip_System"
+    },
+    "BonusValueA" : "Run and Gun",
+    "BonusValueB" : "",
+    "ComponentType" : "Upgrade",
+    "ComponentSubType" : "NotSet",
+    "PrefabIdentifier" : "",
+    "InventorySize" : 2,
+    "Tonnage" : 0,
+    "CanExplode" : true,
+    "AllowedLocations" : "Arms, Legs",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+    "statusEffects" : [
+        {
+            "durationData" : {
+                "duration" : -1,
+                "ticksOnActivations" : false,
+                "useActivationsOfTarget" : false,
+                "ticksOnEndOfRound" : false,
+                "ticksOnMovements" : false,
+                "stackLimit" : 1,
+                "clearedWhenAttacked" : false
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "triggerLimit" : 0,
+                "extendDurationOnTrigger" : 0,
+                "specialRules" : "NotSet",
+                "effectTargetType" : "Creator",
+                "range" : 0,
+                "forcePathRebuild" : false,
+                "forceVisRebuild" : false,
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : true
+            },
+            "effectType" : "StatisticEffect",
+            "Description" : {
+                "Id" : "StatusEffect-QRK-Runandgun",
+                "Name" : "RUN AND GUN",
+                "Details" : "This unit is able to shoot after a sprint move.",
+                "Icon" : "uixSvgIcon_run_n_gun"
+            },
+            "nature" : "Buff",
+            "statisticData" : 
+            {
+                "effectsPersistAfterDestruction" : false,
+                "statName" : "CanShootAfterSprinting",
+                "operation" : "Set",
+                "modValue" : "true",
+                "modType" : "System.Boolean"
+            },
+            "tagData" : null,
+            "floatieData" : null,
+            "actorBurningData" : null,
+            "vfxData" : null,
+            "instantModData" : null,
+            "poorlyMaintainedEffectData" : null
+        },
+        {
+            "durationData" : {
+                "duration" : -1,
+                "stackLimit" : 1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "effectTargetType" : "Creator",
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false
+            },
+            "effectType" : "StatisticEffect",
+            "Description" : {
+                "Id" : "StatusEffect-QRK-crits",
+                "Name" : "EXPOSED ACTUATORS",
+                "Details" : "Increased vulnerability to criticals.",
+                "Icon" : "UixSvgIcon_specialEquip_System"
+            },
+            "statisticData" :
+            {
+                "statName" : "CriticalHitChanceReceivedMultiplier",
+                "operation" : "Float_Multiply",
+                "modValue" : "1.2",
+                "modType" : "System.Single",
+            },
+            "nature" : "Debuff"
+        }
+
+    ],
+    "ComponentTags" : {
+        "items" : [
+        ],
+        "tagSetSourceFile" : ""
+    }
+}

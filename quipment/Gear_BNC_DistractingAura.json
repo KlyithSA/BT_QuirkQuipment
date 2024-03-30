@@ -1,0 +1,108 @@
+{
+    "Description" : {
+        "Cost" : 0,
+        "Rarity" : 99,
+        "Purchasable" : false,
+        "Manufacturer" : "",
+        "Model" : "",
+        "UIName" : "Distracting Chassis",
+        "Id" : "Gear_BNC_DistractingAura",
+        "Name" : "Banshee Distracting Chassis",
+        "Details" : "The Banshee is large, fast, and intimidating. Encountering one at close range can make even the veteran MechWarrior lose their cool.",
+        "Icon" : "UixSvgIcon_specialEquip_System"
+    },
+    "BonusValueA" : "",
+    "BonusValueB" : "",
+    "ComponentType" : "Upgrade",
+    "ComponentSubType" : "NotSet",
+    "PrefabIdentifier" : "",
+    "InventorySize" : 1,
+    "Tonnage" : 0,
+    "AllowedLocations" : "CenterTorso",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+    "statusEffects" : [
+        {
+            "durationData" : {
+                "duration": -1,
+                "stackLimit": 1,
+                "uniqueEffectIdStackLimit": 1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "specialRules" : "Aura",
+                "auraEffectType" : "NotSet",
+                "effectTargetType" : "EnemiesWithinRange",
+                "range" : 135.0,
+                "forcePathRebuild" : false,
+                "forceVisRebuild" : true,
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : true
+            },
+            "effectType" : "StatisticEffect",
+            "Description" :
+            {
+                "Id" : "QRKDistractingAura1",
+                "Name" : "DISTRACTED PILOT",
+                "Details" : "This unit is in close range of an intimidating opponent, reducing their ability to focus.",
+                "Icon" : "uixSvgIcon_status_sensorsImpaired"
+            },
+            "statisticData" : 
+            {
+                "appliesEachTick" : false,
+                "effectsPersistAfterDestruction" : false,
+                "statName" : "AccuracyModifier",
+                "operation" : "Float_Add",
+                "modValue" : "+3.0",
+                "modType" : "System.Single",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "Weapon",
+                "targetWeaponCategory" : "NotSet",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            },
+            "nature" : "Debuff"
+        },
+        {
+            "durationData" : {
+                "duration": -1,
+                "stackLimit": 1,
+                "uniqueEffectIdStackLimit": 1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "specialRules" : "Aura",
+                "auraEffectType" : "NotSet",
+                "effectTargetType" : "EnemiesWithinRange",
+                "range" : 135.0,
+                "forcePathRebuild" : false,
+                "forceVisRebuild" : true,
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false
+            },
+            "effectType" : "StatisticEffect",
+            "Description" :
+            {
+                "Id" : "QRKDistractingAura2",
+                "Name" : "DISTRACTED PILOT",
+                "Details" : "This unit is in close range of an intimidating opponent, reducing their ability to focus.",
+                "Icon" : "uixSvgIcon_status_sensorsImpaired"
+            },
+            "statisticData" : 
+            {
+                "statName" : "CalledShotBonusMultiplier",
+                "operation" : "Float_Multiply",
+                "modValue" : "0.6",
+                "modType" : "System.Single"
+            },
+            "nature" : "Debuff"
+        }
+
+    ],
+    "ComponentTags" : {
+        "items" : [
+        ],
+        "tagSetSourceFile" : ""
+    }
+}
